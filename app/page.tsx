@@ -1,9 +1,31 @@
 import Image from "next/image";
+import CardComponent from "./components/Card";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="text-purple-primary">hello</div>
+    <main className="bg-gray-primary">
+      <div className="grid grid-cols-3 w-[80vw] mx-auto py-16">
+        <div className="mx-auto">
+          <CardComponent />
+        </div>
+        <div className="mx-auto">
+          <CardComponent />
+        </div>
+        <div className="mx-auto ">
+          <CardComponent />
+        </div>
+        <div className="mx-auto">
+          <CardComponent />
+        </div>
+        <div className="mx-auto">
+          <CardComponent />
+        </div>
+        <div className="mx-auto">
+          <CardComponent />
+        </div>
+        
+       
+      </div>
     </main>
   );
 }
